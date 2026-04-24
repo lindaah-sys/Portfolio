@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+
+            border: 4px solid green;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid gray;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: #6eaac2;
+           
+
+        }
+        button:hover{
+            transform: scale(2);
+            animation-name: myAnime;
+            animation-duration: 2s;
+            background-color: #6eaac2;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email....">
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name....">
+
+        <label>Message:</label>
+        <textarea placeholder="Enter message....."></textarea>
+
+        <button type="submit">Send message</button>
+    </form>
+</div>
+
+</body>
+</html>
