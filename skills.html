@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Page</title>
+
+<style>
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+
+header{
+  background: linear-gradient(110deg,#7FC0DE 50%,#4DAD6A 50%);
+  padding:15px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+  font-weight:bold;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:black;
+  font-weight:500;
+}
+nav a:hover{
+  color:#2ecc71;
+}
+
+
+.skills{
+  height:100vh;
+  position:relative;
+  padding:80px 60px;
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.skills::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: linear-gradient(110deg,#7FC0DE 50%,#4DAD6A 50%);
+  z-index:-1;
+}
+
+
+.title{
+  position:absolute;
+  top:20px;
+  left:40px;
+  font-size:20px;
+}
+
+
+.tech{
+  width:45%;
+  background:rgba(255,255,255,0.25);
+  padding:25px;
+  border-radius:15px;
+  margin-top:60px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.skill{
+  margin:20px 0;
+}
+
+.skill p{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+}
+
+.bar{
+  height:10px;
+  background:#cde6d8;
+  border-radius:10px;
+  margin-top:5px;
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  background:#2ecc71;
+  border-radius:10px;
+}
+
+.html{width:90%;}
+.js{width:75%;}
+.git{width:85%;}
+.figma{width:80%;}
+
+
+.soft{
+  width:35%;
+  background:rgba(255,255,255,0.25);
+  padding:25px;
+  border-radius:15px;
+  margin-top:60px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.soft-box{
+  background:rgba(0,0,0,0.1);
+  padding:15px;
+  border-radius:10px;
+  margin:15px 0;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+  <div class="logo"><img src="assets/logo.png" width="20" height="20"></div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#"><b>Skills</b></a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="skills">
+
+  <h2 class="title">MY SKILLS</h2>
+
+  
+  <div class="tech">
+    <h3>Technical skills</h3>
+
+    <div class="skill">
+      <p>HTML <span>90%</span></p>
+      <div class="bar"><div class="fill html"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Javascript (Basic) <span>75%</span></p>
+      <div class="bar"><div class="fill js"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Git & Version control <span>85%</span></p>
+      <div class="bar"><div class="fill git"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>UI/UX Design (Figma) <span>80%</span></p>
+      <div class="bar"><div class="fill figma"></div></div>
+    </div>
+  </div>
+
+  
+  <div class="soft">
+    <h3>Soft skills</h3>
+
+    <div class="soft-box"><img src="assets/m.png" width="20" height="20"> Communication</div>
+    <div class="soft-box"><img src="assets/s.png" width="20" height="20"> Teamwork</div>
+    <div class="soft-box"><img src="assets/p.png" width="20" height="20"> Problem solving</div>
+    <div class="soft-box"><img src="assets/n.png" width="20" height="20"> Time management</div>
+  </div>
+
+</section>
+
+</body>
+</html>
