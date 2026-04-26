@@ -47,14 +47,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
-
-
-.home {
+      .home {
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
   position: relative;
 }
 
@@ -64,66 +59,83 @@ nav a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    110deg,
-    #7FC0DE 50%,
-    #4DAD6A 50%
-  );
-  top: 0;
-  left: 0;
+  background: linear-gradient(110deg, #7FC0DE 50%, #4DAD6A 50%);
   z-index: -1;
 }
 
 
-.intro-card {
-  background: #D9D9D9 26;
-  padding: 20px;
-  width: 669px;
-  height: 290px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.left {
+  width: 50%;
+  padding: 60px;
+  position: relative;
 }
 
-.intro-card p {
-  margin-bottom: 10px;
+
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.intro-card {
+  background: rgba(255,255,255,0.3); /* FIXED */
+  padding: 25px;
+  border-radius: 12px;
+  width: 80%;
+  margin-top: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  object-fit: cover;
 }
 
 
 .btn {
-  padding: 10px 20px;
-  border: none;
+  padding: 10px 25px;
   border-radius: 20px;
-  background: #7FC0DE;
+  border: none;
+  background: #1f7a7a;
   color: white;
   cursor: pointer;
 }
 
 
-.contact-mini {
-  margin-top: 15px;
-  font-size: 14px;
+.contact-btn {
+  position: absolute;
+  bottom: 140px;
+  left: 60px;
+}
+
+.work-btn {
+  position: absolute;
+  bottom: 140px;
+  left: 100px;
 }
 
 
-.profile {
-  text-align: center;
+.info {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
 }
 
-.profile img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.work {
-  margin-top: 15px;
+.right-info {
+  left: 100px;
 }
 
 
-.location {
-  margin-top: 10px;
-  font-size: 14px;
+.item {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
 }
 </style>
 </head>
@@ -143,40 +155,41 @@ nav a {
 </header>
 
 <section class="home">
-
-  
-  <div class="intro-card">
-    <p>
-      Hello👋, welcome to my portfolio.<br>
-      I am Linda, a Software Development trainee <br>passionate about building
-      simple and effective <br>digital solutions.
-    </p>
-
-    <button class="btn">Contact me</button>
-
-    <div class="contact-mini">
-     <p><img src="assets/email.png" width="34.66" height="33.18">     tetalinda35@gmail.com</P>
-     <p> <img src="assets/phone.png" width="34.66" height="33.18">    +250 789 654 800</p>
-      <p><img src="assets/twitter.png" width="34.66" height="33.18">  Teta@250</p>
-    </div>
-  </div>
-<section>
-  <div>
+  <div class="left">
     
-  </div>
-</section>
-  
-  <div class="profile">
-    <img src="assets/L.jpeg" alt="profile"><br><br>
-    <button class="btn work">View my work</button>
-
-    <div class="location">
-      <p>📍 Kigali, Rwanda</p>
-      <p>✉️ tetalinda35@gmail.com</p>
+    <div class="intro-card">
+      <p>
+        Hello 👋, welcome to my portfolio.<br>
+        I am Linda, a Software Development trainee
+        passionate about building simple and effective
+        digital solutions.
+      </p>
     </div>
+
+    <button class="btn contact-btn">Contact me</button>
+
+    <div class="info">
+      <div class="item"><img src="assets/email.png" width="20" height="20"> tetalinda35@gmail.com</div>
+      <div class="item"><img src="assets/phone.png" width="20" height="20"> 789654800</div>
+      <div class="item"><img src="assets/twitter.png" width="20" height="20"> Teta@250</div>
+    </div>
+
+  </div>
+
+  
+  <div class="right">
+
+    <img src="assets/L.jpeg" class="profile">
+
+    <button class="btn work-btn">View my work</button>
+
+    <div class="info right-info">
+      <div class="item"><img src="assets/location.png" width="20" height="20"> Kigali, Rwanda</div>
+      <div class="item"><img src="assets/mail.png" width="20" height="20"> tetalinda35@gmail.com</div>
+    </div>
+
   </div>
 
 </section>
-
-</body>
+  </body>
 </html>
